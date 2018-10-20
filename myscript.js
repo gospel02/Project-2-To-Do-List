@@ -52,7 +52,7 @@ function addlist(){
 
 }
 
-$('.item').on("keydown", function(event){
+$('.newitem').on("keydown", function(event){
     if(event.which === 13){
         addEmptyTask();
     }
