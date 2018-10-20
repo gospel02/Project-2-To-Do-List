@@ -59,7 +59,7 @@ function addlist(){
 }
 
 function addEmptyTask(element) {
-    $(element).parent().append("<div class='item'>"+
+    $(element).parent().after("<div class='item'>"+
         "<i id='square' class='check far fa-square'></i>"+
         "<input class='newitem' contenteditable='true' placeholder='Add Item'></input>"+
         "<i class='handle fas fa-arrows-alt-v'></i>"+
