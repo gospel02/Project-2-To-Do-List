@@ -22,7 +22,7 @@ function addlist(){
     
 
     $(".container").append("<div class='row'>"+
-    "<i id='square' class='check far fa-square'></i>"+
+    "<i id='checklist' class='check far fa-square'></i>"+
     "<span contenteditable='true'>"+ myname +"</span>"+
     "<i class='handle fas fa-arrows-alt-v'></i>"+
     "<i class='trashcan far fa-trash-alt'></i>" +
@@ -31,7 +31,7 @@ function addlist(){
     }
 
     $(".check").click(function(){
-        $(this).parent().find('#square').toggleClass("fa-square  fa-check-square");
+        $(this).parent().find('#checklist').toggleClass("fa-square  fa-check-square");
         
     });
 
@@ -58,18 +58,24 @@ function addlist(){
 
 }
 
+
 function addEmptyTask(element) {
-    $(element).parent().after("<div class='item'>"+
-        "<i id='square' class='check far fa-square'></i>"+
+    $(element).parent().append("<div class='item'>"+
+        "<i id='checkitem' class='check far fa-square'></i>"+
         "<input class='newitem' contenteditable='true' placeholder='Add Item'></input>"+
         "<i class='handle fas fa-arrows-alt-v'></i>"+
         "<i class='trashcan far fa-trash-alt'></i>" +
         "</div>");
 
         $(".check").click(function(){
-            $(this).parent().find('#square').toggleClass("fa-square  fa-check-square");
+            $(this).parent().find('#checkitem').toggleClass("fa-square  fa-check-square");
             
         });
+
+        $(".row").sortable({
+            handle: ".handle"
+        });
+        
         
         $(".trashcan").click(function(){
 
