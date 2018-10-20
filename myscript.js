@@ -52,15 +52,6 @@ function addlist(){
 
 }
 
-$('.newitem').on("keydown", function(event){
-    if(event.which === 13){
-        addEmptyTask();
-    }
-});
-
-
-
-
 function addEmptyTask(element) {
     $(element).parent().after("<div class='item'>"+
         "<i id='square' class='check far fa-square'></i>"+
