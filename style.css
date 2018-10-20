@@ -1,0 +1,95 @@
+body{
+    width: 400px;
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.header{
+    background: blue;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.container{
+    margin-left: 5px;
+}
+
+.row{
+    position: relative;
+    width: 370px;
+    border: 1px solid #dadfea;
+    padding: 12px 10px;
+    margin-top: 10px;
+    
+}
+
+.item{
+    position: relative;
+    width: 320px;
+    border: 1px solid #dadfea;
+    padding: 12px 10px;
+    margin-top: 10px;
+    margin-left: 50px;
+    
+}
+
+button{
+    margin: auto 2.5px;
+}
+
+button:hover{
+    transform: scale(1.10);
+}
+
+input{
+    margin: 0px 2.5px 0px 5px;
+    width: 130px;
+    background: lightgray;
+}
+
+input:hover{
+    transform: scale(1.10)
+}
+
+.trashcan{
+    padding-right: 10px;
+    padding-left: 10px;
+    color: red;
+    float: right;
+}
+
+.trashcan:hover{
+    transform: scale(1.5);
+}
+
+.handle{
+    float: right;
+}
+
+.handle:hover{
+    transform: scale(1.5);
+}
+
+.plus{
+    color: blue;
+    float: right;
+}
+
+.plus:hover{
+    transform: scale(1.5);
+}
+
+.check{
+    color: Green;
+    padding-right: 10px;
+}
+
+.check:hover{
+    transform: scale(1.5);
+}
+
+
+
