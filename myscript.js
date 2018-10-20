@@ -22,6 +22,7 @@ function addlist(){
     
 
     $(".container").append("<div class='row'>"+
+    "<i id='square' class='check far fa-square'></i>"+
     "<span contenteditable='true'>"+ myname +"</span>"+
     "<i class='handle fas fa-arrows-alt-v'></i>"+
     "<i class='trashcan far fa-trash-alt'></i>" +
@@ -29,10 +30,11 @@ function addlist(){
     "</div");
     }
 
-    
+    $(".check").click(function(){
+        $(this).parent().find('#square').toggleClass("fa-square  fa-check-square");
+        
+    });
 
-    
-    
     $(".myinput").val("");
 
 
