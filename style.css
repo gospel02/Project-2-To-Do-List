@@ -38,11 +38,14 @@ body{
 
 button{
     margin: auto 2.5px;
+    background: lightgray;
 }
 
 button:hover{
-    transform: scale(1.10);
+    transform: scale(1.15);
+    background: blue;
 }
+
 
 input{
     margin: 0px 2.5px 0px 5px;

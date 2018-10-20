@@ -44,7 +44,6 @@ function addlist(){
         $(this).parent().animate({
             opacity: 0,
         }, 800, function(){
-            //when animation isplus fas fa-plus done
             $(this).remove();
         });
     });
@@ -79,7 +78,7 @@ function addEmptyTask(element) {
 
             $(this).parent().animate({
                 opacity: 0,
-            }, 400, function()
+            }, 400, function(){
                 $(this).remove();
             });
         });
