@@ -48,6 +48,7 @@ function addlist(){
             $(this).remove();
         });
     });
+
   nextListId++;
 
 }
@@ -78,8 +79,7 @@ function addEmptyTask(element) {
 
             $(this).parent().animate({
                 opacity: 0,
-            }, 400, function(){
-                //when animation is done
+            }, 400, function()
                 $(this).remove();
             });
         });
